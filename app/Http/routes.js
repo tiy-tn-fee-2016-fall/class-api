@@ -25,3 +25,4 @@ Route.get('/', function * (request, response) {
 });
 
 Route.resource('lunch-spots', 'LunchSpotController');
+Route.resource('puppies/:collection', 'PuppyController');
