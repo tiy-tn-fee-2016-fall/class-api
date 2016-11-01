@@ -12,6 +12,7 @@ class LunchSpotController {
 
   * store(request, response) {
     const input = request.only('name', 'street', 'city', 'zip', 'votes');
+    input.votes = input.votes || 0;
     const lunchSpot = yield LunchSpot.create(input);
 
     response.send(lunchSpot);
