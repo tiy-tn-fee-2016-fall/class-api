@@ -7,6 +7,9 @@
     "start": "node --harmony_proxies server.js",
     "lint": "standard"
   },
+  "engines": {
+    "node": "6.1.0"
+  },
   "author": "",
   "license": "MIT",
   "description": "",
