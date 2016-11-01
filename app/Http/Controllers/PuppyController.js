@@ -15,7 +15,7 @@ class PuppyController {
   * store(request, response) {
     const collection = request.param('collection');
     const input = request.only(
-      'name', 'age', 'adopted', 'sex', 'color', 'description', 'breed');
+      'name', 'age', 'adopted', 'sex', 'color', 'description', 'breed', 'image_url');
     input.collection = collection;
     const puppy = yield Puppy.create(input);
 
@@ -33,7 +33,7 @@ class PuppyController {
   * update(request, response) {
     const collection = request.param('collection');
     const input = request.only(
-      'name', 'age', 'adopted', 'sex', 'color', 'description', 'breed');
+      'name', 'age', 'adopted', 'sex', 'color', 'description', 'breed', 'image_url');
     input.collection = collection;
     const id = request.param('id');
 
