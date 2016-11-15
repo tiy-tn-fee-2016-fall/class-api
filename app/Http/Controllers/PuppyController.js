@@ -17,6 +17,7 @@ class PuppyController {
     const input = request.only(
       'name', 'age', 'adopted', 'sex', 'color', 'description', 'breed', 'image_url');
     input.collection = collection;
+    input.adopted = !!input.adopted;
     const puppy = yield Puppy.create(input);
 
     response.send(puppy);
@@ -35,6 +36,7 @@ class PuppyController {
     const input = request.only(
       'name', 'age', 'adopted', 'sex', 'color', 'description', 'breed', 'image_url');
     input.collection = collection;
+    input.adopted = !!input.adopted;
     const id = request.param('id');
 
     const puppy = yield Puppy.with().where({ id, collection }).firstOrFail();
