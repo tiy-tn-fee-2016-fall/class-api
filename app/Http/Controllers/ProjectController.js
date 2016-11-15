@@ -11,7 +11,7 @@ class ProjectController {
   }
 
   * store(request, response) {
-    const input = request.only('name', 'project_id', 'goal', 'description', 'project_id');
+    const input = request.only('name', 'goal', 'description');
     const project = yield Project.create(input);
 
     response.send(project);
@@ -25,7 +25,7 @@ class ProjectController {
   }
 
   * update(request, response) {
-    const input = request.only('name', 'project_id', 'goal', 'description', 'project_id');
+    const input = request.only('name', 'goal', 'description');
     const id = request.param('id');
 
     const project = yield Project.with('pledge', 'pledgeLevels').where({ id }).firstOrFail();
