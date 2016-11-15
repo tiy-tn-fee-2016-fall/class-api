@@ -30,6 +30,8 @@ const providers = [
   'adonis-middleware/providers/AppMiddlewareProvider',
   'adonis-auth/providers/AuthManagerProvider',
   'adonis-generators/providers/GeneratorsProvider',
+
+  'adonis-jsonapi/providers/JsonApiProvider',
 ];
 
 /*
