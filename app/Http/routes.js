@@ -26,3 +26,7 @@ Route.get('/', function * (request, response) {
 
 Route.resource('lunch-spots', 'LunchSpotController');
 Route.resource('puppies/:collection', 'PuppyController');
+
+Route.resource('api/punch/pledges', 'PledgeController');
+Route.resource('api/punch/projects', 'ProjectController');
+Route.resource('api/punch/pledge-levels', 'PledgeLevelController');
