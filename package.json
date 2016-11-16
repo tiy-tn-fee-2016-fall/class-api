@@ -20,7 +20,7 @@
     "adonis-commands": "^2.1.2",
     "adonis-fold": "^3.0.3",
     "adonis-framework": "^3.0.3",
-    "adonis-generators": "^0.4.7",
+    "adonis-generators": "^0.5",
     "adonis-jsonapi": "^0.5.4",
     "adonis-lucid": "^3.0.9",
     "adonis-middleware": "^1.0.8",
