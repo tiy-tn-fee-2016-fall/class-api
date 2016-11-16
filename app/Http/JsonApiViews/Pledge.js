@@ -6,16 +6,16 @@ class Pledge extends JsonApiView {
   }
 
   project() {
-    return this.belongsTo('App/Http/JsonApiViews/project', {
+    return this.belongsTo('App/Http/JsonApiViews/Project', {
       included: true,
-      excludeRelation: 'pledges'
+      excludeRelation: 'pledges',
     });
   }
 
   user() {
-    return this.belongsTo('App/Http/JsonApiViews/user', {
+    return this.belongsTo('App/Http/JsonApiViews/User', {
       included: true,
-      excludeRelation: 'pledges'
+      excludeRelation: 'pledges',
     });
   }
 
