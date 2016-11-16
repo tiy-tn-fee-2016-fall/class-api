@@ -30,3 +30,7 @@ Route.resource('puppies/:collection', 'PuppyController');
 Route.resource('api/punch/pledges', 'PledgeController');
 Route.resource('api/punch/projects', 'ProjectController');
 Route.resource('api/punch/pledge-levels', 'PledgeLevelController');
+
+Route.resource('json-api/punch/projects', 'Api/ProjectController');
+Route.resource('json-api/punch/pledges', 'Api/PledgeController');
+Route.resource('json-api/punch/pledge-levels', 'Api/PledgeLevelController');
