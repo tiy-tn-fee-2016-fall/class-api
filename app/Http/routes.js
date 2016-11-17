@@ -34,3 +34,6 @@ Route.resource('api/punch/pledge-levels', 'PledgeLevelController');
 Route.resource('json-api/punch/projects', 'Api/ProjectController');
 Route.resource('json-api/punch/pledges', 'Api/PledgeController');
 Route.resource('json-api/punch/pledge-levels', 'Api/PledgeLevelController');
+
+Route.post('/users', 'UserController.store');
+Route.post('/api/token', 'SessionController.store');
